@@ -8,8 +8,8 @@ func = sys.argv[1]
 #CONNECT TO MYSQL--------------------------------------------------------
 mydb = mysql.connector.connect(
   host="test.mellob.co",
-  user="admin",
-  password="Mellob1989@SQL",
+  user="YOUR_DB_USERNAME",
+  password="YOUR_DB_PASSWORD",
   database="ticket_management_pps"
 )
 db = mydb.cursor()
