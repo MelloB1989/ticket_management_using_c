@@ -168,13 +168,13 @@ void generate_receipt(int user_id){
 void dump_data(){
     int i = 0;
     printf("\n\n\n\nDUMPING DATABASE DATA----------------------------------------------------");
-    printf("Number of tickets booked: %d", booking_count);
     list_movies();
     printf("\n\n");
-    while (i<=booking_count)
+    while (i<=booking_count-1)
     {
         generate_receipt(i);
         i = i+1;
     }
+    printf("\nNumber of tickets booked: %d\n\n", booking_count);
     printf("\n\n\n\nDUMP COMPLETE-------------------------------------------------------------");
 }
