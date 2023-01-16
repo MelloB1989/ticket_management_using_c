@@ -174,6 +174,7 @@ void dump_data(){
     while (i<=booking_count)
     {
         generate_receipt(i);
+        i = i+1;
     }
     printf("\n\n\n\nDUMP COMPLETE-------------------------------------------------------------");
 }
